@@ -76,7 +76,8 @@ function addOneClickVSBRegistration() {
 					redirect(notloggedinMessage, minervaLogin);
 				}
 				else if (infotext.includes('You are not permitted to register at this time.') ||
-						infotext.includes('Term not available for Registration processing.')) {
+						infotext.includes('Term not available for Registration processing.') ||
+						infotext.includes('You may register as of this date and time:')) {
 					redirect(notpermittedMessage, minervaRegister);
 				}
 				else {
